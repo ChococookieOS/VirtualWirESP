@@ -7,3 +7,12 @@ See the VirtualWire [Reference](https://www.airspayce.com/mikem/arduino/VirtualW
 Tested with the supplied example code on an ESP32 NodeMCU:      
 <br>
 ![NodeMCU example](https://www.elektor.de/media/catalog/product/cache/5562f759999b940b867d7ecf207c58b6/1/6/169034-91f-web.jpg "NodeMCU")
+
+## Caution
+I had to redefine
+```
+#define F_CPU 80000000L
+```
+
+in VirtualWirESP.h because my clock speeds where falsly set to 240MHz which caused wrong timings for recieving data.
+You might need to readjust this for your personal needs.

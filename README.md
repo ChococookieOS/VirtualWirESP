@@ -11,8 +11,9 @@ Tested with the supplied example code on an ESP32 NodeMCU:
 ## Caution
 I had to redefine
 ```
+VirtualWirESP.h
 #define F_CPU 80000000L
 ```
 
-in VirtualWirESP.h because my clock speeds where falsly set to 240MHz which caused wrong timings for recieving data.
+because my clock speeds where falsly set to 240MHz which caused wrong timings for recieving data.
 You might need to readjust this for your personal needs.

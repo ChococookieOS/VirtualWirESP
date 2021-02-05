@@ -15,5 +15,5 @@ VirtualWirESP.h
 #define F_CPU 80000000L
 ```
 
-because my clock speeds where falsly set to 240MHz which caused wrong timings for recieving data.
+because my clock speeds were falsly set to 240MHz which caused wrong timings for recieving data.
 You might need to readjust this for your personal needs.
